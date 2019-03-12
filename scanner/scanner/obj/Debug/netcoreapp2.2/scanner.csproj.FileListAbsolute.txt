@@ -1,0 +1,11 @@
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/bin/Debug/netcoreapp2.2/scanner.deps.json
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/bin/Debug/netcoreapp2.2/scanner.runtimeconfig.json
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/bin/Debug/netcoreapp2.2/scanner.runtimeconfig.dev.json
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/bin/Debug/netcoreapp2.2/scanner.dll
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/bin/Debug/netcoreapp2.2/scanner.pdb
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/obj/Debug/netcoreapp2.2/scanner.csprojAssemblyReference.cache
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/obj/Debug/netcoreapp2.2/scanner.csproj.CoreCompileInputs.cache
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/obj/Debug/netcoreapp2.2/scanner.AssemblyInfoInputs.cache
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/obj/Debug/netcoreapp2.2/scanner.AssemblyInfo.cs
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/obj/Debug/netcoreapp2.2/scanner.dll
+/home/nate/Documents/projects/git/gitscan/scanner/scanner/obj/Debug/netcoreapp2.2/scanner.pdb
