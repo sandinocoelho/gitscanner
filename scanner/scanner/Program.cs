@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net.Http;
+using System.Text.RegularExpressions;
+using scanner.Generics;
 
 namespace scanner
 {
     internal static class Program
     {
-        // URI to get results
-        private const string Url = "https://www.google.com/search?q=";
-
         // Keywords to scan for URIs
-        private static IEnumerable<string> Keywords => new []
+        private static IEnumerable<string> Keywords => new[]
         {
             "Bitcoin",
             "Exchange",
@@ -23,29 +21,14 @@ namespace scanner
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
-            foreach (var keyword in Keywords)
-            {
-                Console.Write(Results(keyword));
-            }
-        }
+            Scanner scan  = new Scanner();
+            Links   links = new Links();
 
-        /// <summary>
-        /// Get the source of our search engine
-        /// </summary>
-        /// <returns></returns>
-        private static string Results(string keyword)
-        {
-            var url = Url + keyword;
-            
-            using (var client = new HttpClient())
+            foreach (string keyword in Keywords)
             {
-                using (var response = client.GetAsync(url).Result)
-                {
-                    using (var content = response.Content)
-                    {
-                        return content.ReadAsStringAsync().Result;
-                    }
-                }
+                string source = scan.Scrape("http://google.com?q=" + keyword);
+
+                links.Extract(source);
             }
         }
     }
